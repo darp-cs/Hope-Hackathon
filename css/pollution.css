@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.pollution-search-container {
+  background: #53555b;
+  position: relative;
+  display: flex;
+  height: 20vh;
+}
+
+.pollution-search-button {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pollution-search-form {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input[type=text], select, textarea {
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+  border-color: #878888;
+}
+
+/*# sourceMappingURL=pollution.css.map */

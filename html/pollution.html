@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel = "stylesheet" href="../css/pollution.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     
+<main>
+    <div class = "pollution-search-container">
+        <form class = "pollution-search-form">
 
-<div class = "pollution-search-bar">
-<section class = "pollution-search-box"> Enter </section>
-<button class = "pollution-search-button"></button>
-</div>
+            <label class= "label" for="city">City:</label>
+            <input type="text" id="city" name="City" placeholder= "Enter City Here"> 
+
+            <label class= "label" for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="Enter State Here">
+            
+        </form>
+        <button class = "pollution-search-button">Submit</button>
+    </div>
+</main>
 
 </body>
 </html>
