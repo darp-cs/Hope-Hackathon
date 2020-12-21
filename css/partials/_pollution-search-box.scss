@@ -2,30 +2,108 @@
 
 $main-black: #53555b;
 $main-grey: #878888; 
-.pollution-search-container {
-    background: $main-black;
-    position: relative;
-    display: flex;
-    height: 20vh;
+$clouds: "../images/clouds-back.jpg";
+$breakpoint-minCellPhone: 360px;
+$breakpoint-maxCellPhone: 480px;
+$breakpoint-minDesktop: 481px;
+
+@media (min-width: $breakpoint-minDesktop){
+  html, body{
+    height: 100%;
+    margin: 0;
+    text-decoration: none;
   }
-  
-  .pollution-search-button {
-    display: inline-block;
-    height: 30px;
-    width: 60px;
-    margin-top: 30px;
-    margin-bottom:30px;
+
+
+  main{
+    background-image: url($clouds);
+    height:auto;
   }
-  
-  .pollution-search-form {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom:30px;
-  }
-  
-  input[type="text"], select, textarea{
-      display: block;
-      box-sizing: border-box; 
-      height: 40px;
-      border-color: $main-grey;
+
+  .pollution-search-container {
+      background: black;
+      position: relative;
+      height: 20vh;
+      width: 60%;
+      margin-left: 15%;
     }
+
+    .pollution-search-form {
+
+      .label{
+        height: auto;
+        width:auto;
+        margin:0;
+      }
+
+      input[type="text"], select, textarea{
+        display: block;
+        box-sizing: border-box; 
+        height: 40px;
+        border-color: $main-grey;
+        margin:0;
+      }
+
+      .pollution-search-button{
+        height :40px;
+        width : 100px;
+        margin-left: 15px;
+        background-color: $main-black;
+        border-style: none;
+      }
+      margin-top: 45px;
+      margin-left: 150px;
+      position: absolute;
+      display:inline-flex;
+    }
+
+}
+
+  @media (min-width: $breakpoint-minCellPhone) and (max-width: $breakpoint-maxCellPhone){
+    html, body{
+      margin: 0;
+      height:100%;
+      text-decoration: none;
+    }
+    
+    
+    main{
+      background-image: url($clouds);
+      height:auto;
+    }
+
+    .pollution-search-container {
+      background: black;
+      position: relative;
+      height: 20vh;
+      width: 60%;
+      margin-left: 20%;
+    }
+  
+    .pollution-search-form {
+  
+      .label{
+        margin:0;
+      }
+  
+      input[type="text"], select, textarea{
+        display: block;
+        box-sizing: border-box; 
+        border-color: $main-black;
+        margin:0;
+        height:auto;
+      }
+  
+      .pollution-search-button{
+        margin-top: 10px;
+        height: auto;
+        border-radius: 4em;
+      }
+      width: 30%;
+      height:auto;
+      position: absolute;
+      margin-left: 20px;
+    }
+  }
+  
+  
