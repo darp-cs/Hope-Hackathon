@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <title>Hope-Hack</title>
+    <style>
+        header{
+            background-image: url("../images/donate.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            /* overflow-x: hidden; */
+            position: relative;
+            width: 100%;
+            height: 90vh;
+        }
+        header h1{
+            margin: 17% 40%;
+            width: 30vh;
+            color:#fff;
+            font-size: 1.8em;
+            color:green;
+            text-shadow: .3px .3px .3px #fff;
+        }
+        input:focus{
+        border-color:blue;
+        box-shadow: 0 0 8px 0 blue;
+		}
+		.inputWithIcon input[type=email],.inputWithIcon input[type=text]{
+         padding-left:40px;
+		}
+		.inputWithIcon{
+			position: relative;
+		}
+		.inputWithIcon i{
+			position:absolute;
+			left: 170px;
+			top: -5px;
+			padding: 9px 8px;
+			color: #aaa;
+			transition: .3s;
+		}
+		.inputWithIcon input[type=email]:focus + i{
+			color: green;
+        }
+       .distance{
+           margin: 20% auto;
+       }
+    /* contact page styling */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo--wrapper">
+                <img class="logo" src="../images/winf_logo.png" alt="logo">
+            </div>
+<h1>"Go Green Breath Clean"</h1>
+            <nav class="navbar">
+                <div class="hamburger--container">
+                    <div class="line line--1"></div>
+                    <div class="line line--2"></div>
+                    <div class="line line--3"></div>
+                </div>
+
+                <ul class="ul--navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pollution</a></li>
+                    <li><a href="help.html">How to help</a></li>
+                    <li><a href="contact.html">Get Involved</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form id="form">
+            <section class="title">
+         <h1>Our Contact</h1>
+         <p>Your Donation Of $10 A Month, Just $0.33 A Day, Will Help Save Our Air!!</p>
+            </section>
+            <div class="distance">
+            <label for="name">FirstName:</label>
+      <!---adding icon html code--> 
+			<div class="inputWithIcon">
+			<input type="text"  name="name" id="name" placeholder="FirstName" required>
+			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+			<br><br>
+			<label for="lastname">LastName:</label>
+			<div class="inputWithIcon">
+			<input type="text"  name="lastname" id="lastname" placeholder="LastName" required>
+			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+			<br><br>
+      <label for="phone">Phone:</label>
+			<div class="inputWithIcon">
+			<input type="email"  name="phone" id="phone" placeholder="Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+			<i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+		</div><br><br>
+			<label for="email">Email:</label>
+			<div class="inputWithIcon">
+			<input type="email"  name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+			<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+		</div><br><br>
+    <label for="gender">Please Choose Your Gender:</label>
+			<select name="gender" id="gender">
+				<option value="0">Male</option>
+				<option value="1">Female</option>
+				<option value="2">None</option>
+			</select>
+      <br><br>
+      <label for="area"></label>
+		<textarea id="area" name="area">Enter Your Comment</textarea><br>
+          <button class="butn">Submit</button>
+          </div>
+</section>
+        </form>
+        <footer class="footer">  
+            <div class="social">
+                <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener" aria-label="Link to our Instagram page!"><i class="fa fa-instagram"></i></a>
+                <a href="/index.html"><img id="logo" src="../images/winf_logo.png" alt="wind logo" width="47" height="45"></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Link to our Facebook page!"><i class="fa fa-facebook-square"></i></a>
+            </div> 
+            <div class="copyright">© Keep Air Clean</div>
+        </footer>
+        </body>
+        </html>
