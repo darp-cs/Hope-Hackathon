@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media (min-width: 481px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  main {
+    background-image: url("../images/clouds-back.jpg");
+    height: auto;
+  }
+
+  .pollution-search-container {
+    background: black;
+    position: relative;
+    height: 20vh;
+    width: 60%;
+    margin-left: 15%;
+  }
+
+  .pollution-search-form {
+    margin-top: 45px;
+    margin-left: 150px;
+    position: absolute;
+    display: inline-flex;
+  }
+  .pollution-search-form .label {
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+  .pollution-search-form input[type=text], .pollution-search-form select, .pollution-search-form textarea {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    border-color: #878888;
+    margin: 0;
+  }
+  .pollution-search-form .pollution-search-button {
+    height: 40px;
+    width: 100px;
+    margin-left: 15px;
+    background-color: #53555b;
+    border-style: none;
+  }
+}
+@media (min-width: 360px) and (max-width: 480px) {
+  html, body {
+    margin: 0;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  main {
+    background-image: url("../images/clouds-back.jpg");
+    height: auto;
+  }
+
+  .pollution-search-container {
+    background: black;
+    position: relative;
+    height: 20vh;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .pollution-search-form {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    margin-left: 20px;
+  }
+  .pollution-search-form .label {
+    margin: 0;
+  }
+  .pollution-search-form input[type=text], .pollution-search-form select, .pollution-search-form textarea {
+    display: block;
+    box-sizing: border-box;
+    border-color: #53555b;
+    margin: 0;
+    height: auto;
+  }
+  .pollution-search-form .pollution-search-button {
+    margin-top: 10px;
+    height: auto;
+    border-radius: 4em;
+  }
+}
+
+/*# sourceMappingURL=pollution.css.map */
