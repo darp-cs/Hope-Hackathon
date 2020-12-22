@@ -16,32 +16,56 @@ $breakpoint-minDesktop: 481px;
 
 
   main{
-    background-image: url($clouds);
+    background-color:black;
     height:auto;
+    border: 2px solid $main-grey;
+    padding-bottom: 50px;
+    border-bottom-style: ridge;
   }
 
   .pollution-search-container {
-      background: black;
+      background: $main-grey;
       position: relative;
-      height: 20vh;
+      height: 13vh;
       width: 60%;
-      margin-left: 15%;
+      margin-left: 19%;
+      border-radius: 10px;
+      border-color: $main-grey;
     }
 
     .pollution-search-form {
 
-      .label{
+      margin-top: 30px;
+      margin-left: 150px;
+      position: absolute;
+      display:inline-flex;
+
+      .pollution-label{
         height: auto;
         width:auto;
-        margin:0;
+        text-shadow: none;
+        color:white;
+        margin-right:15px;
+        margin-top:5px;
       }
 
-      input[type="text"], select, textarea{
+      .pollution-input[type="text"], select, textarea{
         display: block;
         box-sizing: border-box; 
         height: 40px;
         border-color: $main-grey;
-        margin:0;
+        position:initial;
+        margin-right:15px;
+      }
+
+      .pollution-select-input{
+        display: block;
+        box-sizing: border-box; 
+        height: 40px;
+        border-color: $main-grey;
+        position:initial;
+        margin-right:15px;
+        margin-top: 0px;
       }
 
       .pollution-search-button{
@@ -51,10 +75,6 @@ $breakpoint-minDesktop: 481px;
         background-color: $main-black;
         border-style: none;
       }
-      margin-top: 45px;
-      margin-left: 150px;
-      position: absolute;
-      display:inline-flex;
     }
 
 }
@@ -68,7 +88,7 @@ $breakpoint-minDesktop: 481px;
     
     
     main{
-      background-image: url($clouds);
+      background-color: black;
       height:auto;
     }
 
@@ -82,11 +102,9 @@ $breakpoint-minDesktop: 481px;
   
     .pollution-search-form {
   
-      .label{
-        margin:0;
-      }
   
       input[type="text"], select, textarea{
+        position: absolute;
         display: block;
         box-sizing: border-box; 
         border-color: $main-black;
