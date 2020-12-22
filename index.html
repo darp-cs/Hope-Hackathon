@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/index.css"> -->
     <link rel="stylesheet" type="text/css" href="/css/home_page.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/index.css"> -->
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Go Green, Keep the Air Clean </title>
 </head>
 <body>
     <header>
+        <div class="container">
+
+            <nav class="navbar">
+                <div class="hamburger--container">
+                    <div class="line line--1"></div>
+                    <div class="line line--2"></div>
+                    <div class="line line--3"></div>
+                </div>
+                <ul class="ul--navlist">
+                    <li><a onclick="location.href='/' ">Home</a></li>
+                    <li><a onclick="location.href='/pollution'">Pollution</a></li>
+                    <li><a onclick="location.href='/help' ">How to help</a></li>
+                    <li><a onclick="location.href='/contact' ">Get Involved</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <section class="mobile_header">
             <h1 class="mobile_text">Keep Air Clean</h1>
         </section>
@@ -98,6 +118,9 @@
         </div> 
         <div class="copyright">© Keep Air Clean</div>
     </footer>
+
     <script src="js/home.js"></script>
+    <script src="js/navbar.js"></script>
+
 </body>
 </html>
