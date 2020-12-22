@@ -1,0 +1,190 @@
+$main-black: #53555b;
+$main-grey: #878888; 
+
+.spacer{
+    padding-top: 10%;
+}
+
+.pollution-container{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:auto;
+    margin-top: 100px;
+    grid-column-gap:0 ;
+
+    .pollutants-container{
+        width:300px;
+        list-style: none;
+        border: 2px solid $main-grey;
+        border-radius: 10px;
+        background-color: $main-black;
+        margin-left: 13%;
+    }
+    .legend-container{
+        width:300px;
+        margin-left: 40%;
+        border: 2px solid $main-grey;
+        border-radius: 10px;
+        background-color: $main-black;
+    }
+    
+
+    #legend-top{
+        border-radius: 9px 9px 0px 0px;
+        background-color: $main-black;
+        height: 30px;
+        text-align: center;
+        color: #F1F1F1;
+    }
+    #good{
+        background-color: greenyellow;
+        text-align: center;
+        height: 30px;
+    }
+
+    #moderate{
+        background-color: yellow;
+        text-align: center;
+        height: 30px;
+    }
+
+    #usg{
+        background-color: orange;
+        text-align: center;
+        height: 30px;
+    }
+
+    #unhealthy{
+        background-color: orangered;
+        text-align: center;
+        height: 30px;
+    }
+
+    #vu{
+        background-color: red;
+        text-align: center;
+        height: 30px;
+    }
+
+    #hazardous{
+        background-color: darkred;
+        text-align: center;
+        border-radius: 0px 0px 9px 9px;
+        height: 30px;
+    }
+
+    #pollutants-top{
+        border-radius: 9px 9px 0px 0px;
+        background-color: $main-black;
+        height: 30px;
+        text-align: center;
+        color: #F1F1F1;
+    }
+
+    #pm10{
+        height: 30px;
+        text-align: center;
+        background-color: #F1F1F1;
+    }
+
+    #pm25{
+        height: 30px;
+        text-align: center;
+        background-color: #F1F1F1;
+    }
+
+    #o3{
+        height: 30px;
+        text-align: center;
+        background-color: #F1F1F1;
+    }
+
+    #n2{
+        height: 30px;
+        text-align: center;
+        background-color: #F1F1F1;
+    }
+
+    #co{
+        height: 30px;
+        text-align: center;
+        background-color: #F1F1F1;
+    }
+
+    #so2{
+        height: 30px;
+        text-align: center;
+        background-color: #F1F1F1;
+        border-radius: 0px 0px 9px 9px;
+    }
+
+
+}
+.city-data{
+    position: relative;
+    background-color: $main-black;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    height:auto;
+
+    .city{
+        margin-left:30px;
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+.state-data{
+    position: relative;
+    background-color: $main-black;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    height: auto;
+
+    .state{
+        margin-left:30px;
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+.pollutants-data{
+    position: relative;
+    background-color: $main-black;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    height: auto;
+
+    .mainpollutant{
+        margin-left:30px;
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+.aqi-data{
+    position: relative;
+    background-color: $main-black;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    height: auto;
+
+    .aqi{
+        margin-left:30px;
+        font-size: 30px;
+        padding: 5px;
+    }
+}

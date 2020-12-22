@@ -1,11 +1,11 @@
 
 const request = require("request");
-const express = require('express')
+const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const app = express()
-const apiKey = 'your api key';
 const router = express.Router();
+const fetch = require("node-fetch");
 
 app.use('/images', express.static(__dirname + '/images'));
 app.use('/css', express.static(__dirname + '/css'));
@@ -21,13 +21,33 @@ router.get('/',function(req,res){
 
 
 router.get('/pollution',function(req,res){
+  res.sendFile(path.join(__dirname+'/html/pollution.html'));
+//__dirname : It will resolve to your project folder.
+});
+
+
+router.post('/pollution', function(req, res){
+  
+console.log("IN POST")
 res.sendFile(path.join(__dirname+'/html/pollution.html'));
+  
+});
+
+
+router.get('/help',function(req,res){
+    res.sendFile(path.join(__dirname+'/html/help.html'));
+    //__dirname : It will resolve to your project folder.
+  });
+
+
+router.get('/contact',function(req,res){
+  res.sendFile(path.join(__dirname+'/html/contact.html'));
 //__dirname : It will resolve to your project folder.
 });
 
 app.use('/', router);
-
 const port = process.env.PORT || 3002
 app.listen(port, ()=>{
     console.log(`This server is running on ${port}`)
 })
+
