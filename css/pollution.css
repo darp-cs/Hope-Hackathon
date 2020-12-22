@@ -249,7 +249,7 @@
   margin-top: 100px;
   height: auto;
 }
-.city-data .city {
+.city-data #cityd {
   margin-left: 30px;
   font-size: 30px;
   padding: 5px;
@@ -265,7 +265,7 @@
   margin-top: 100px;
   height: auto;
 }
-.state-data .state {
+.state-data #stated {
   margin-left: 30px;
   font-size: 30px;
   padding: 5px;
@@ -281,7 +281,7 @@
   margin-top: 100px;
   height: auto;
 }
-.pollutants-data .mainpollutant {
+.pollutants-data #mainpollutant {
   margin-left: 30px;
   font-size: 30px;
   padding: 5px;
@@ -297,7 +297,7 @@
   margin-top: 100px;
   height: auto;
 }
-.aqi-data .aqi {
+.aqi-data #aqi {
   margin-left: 30px;
   font-size: 30px;
   padding: 5px;
