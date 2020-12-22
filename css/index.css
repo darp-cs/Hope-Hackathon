@@ -735,3 +735,36 @@ text-transform: uppercase;
         transform: translateY(4px);
       }
     }
+    /*Footer css code*/
+    .footer {
+        width: 100%;
+        background-color: black;
+        font-size: 1em;
+        padding: 1.5em 0em 1.5em 0em;
+      }
+      .footer .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer .social i {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        font-size: 30px;
+        padding: 0.5em;
+      }
+      .footer .social #logo {
+        background: white;
+        border-radius: 30%;
+        padding: 5px;
+      }
+      .footer .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        padding-top: 10px;
+      }
+      
