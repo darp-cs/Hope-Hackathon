@@ -14,7 +14,6 @@ function retrieve(){
 
 
 function APIretrieve(city, state){
-    console.log("IN APIRETRIEVE");
     
     fetch(`http://api.airvisual.com/v2/city?city=${city}&state=${state}&country=USA&key=${apiKey}`)
     .then(response => response.json())

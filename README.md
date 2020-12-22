@@ -14,10 +14,10 @@ $ git clone https://github.com/darp-cs/Hope-Hackathon.git
 $ cd Hope-Hackathon
 
 # Install dependencies
-$
+$npm install
 
 # Run the app
-$
+$node index.js or $nodemon index.js
 ```
 
 ## API Used
@@ -27,3 +27,5 @@ $
 -   **Diego Rodriguez** - [GitHub](https://github.com/darp-cs)
 -   **Aissatou Diakite** -  [GitHub](https://github.com/Aissadiak)
 -   **Rochelly Reyes** - [GitHub](https://github.com/RochellyReyes)
+
+

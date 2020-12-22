@@ -27,8 +27,6 @@ router.get('/pollution',function(req,res){
 
 
 router.post('/pollution', function(req, res){
-  
-console.log("IN POST")
 res.sendFile(path.join(__dirname+'/html/pollution.html'));
   
 });
